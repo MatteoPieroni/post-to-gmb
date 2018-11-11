@@ -1,0 +1,22 @@
+.page-selector {
+	display: inline-block;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width: 33%;
+    box-sizing: border-box;
+}
+.page-selector .avatar {
+	height: auto;
+	width:  15%;
+}
+.page-selector label {
+	display: inline-block;
+	width: 85%;
+}
+
+.page-selector input[type="checkbox"] {
+	position: absolute;
+	left: 9999;
+	bottom:  9999;
+	opacity: 0;
+}
