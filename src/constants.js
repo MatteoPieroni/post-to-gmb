@@ -27,3 +27,7 @@ export const topicType = {
 export const placeStatus = {
 	open: "OPEN",
 }
+
+export const awsApi = {
+	url: 'https://s3.amazonaws.com/post-gmb-bucket-2/public/'
+}

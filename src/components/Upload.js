@@ -12,7 +12,7 @@ const Upload = ({addedClass, uploadValue, onChange, error}) => {
 		<div className={"upload " + addedClass}>
 			<span className="upload__label">{uploadText}</span>
 			<label>Upload</label>
-			<input type="file" className="upload__input" onChange={onChange}></input>
+			<input type="file" id="file-upload" className="upload__input" onChange={onChange}></input>
 			{errorMessage()}
 		</div>
 	)

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Input = ({addedClass, inputName, inputId, labelText, inputType, onChange, error}) => {
+const Input = ({addedClass, inputName, inputId, labelText, autoFocus = false, inputType, onChange, error}) => {
 	const addedClassName = (addedClass) ? addedClass : '';
 	const errorMessage = function() {
 		if (error)
@@ -10,7 +10,7 @@ const Input = ({addedClass, inputName, inputId, labelText, inputType, onChange, 
 	return (
 		<div className={addedClassName}>
 			<label htmlFor="post-text">{labelText}</label>
-			<input type={inputType} name={inputName} id={inputId} onChange={onChange} />
+			<input type={inputType} autoFocus={autoFocus} name={inputName} id={inputId} onChange={onChange} />
 			{errorMessage()}
 		</div>
 	)

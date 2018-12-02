@@ -76,7 +76,7 @@ class PostCreator extends Component {
 						options={options}
 					/>
 					<Input inputType="text" labelText="Button url" name="post-button-url" />
-					<Button buttonType="submit" text="Post to your page" />
+					<Button disabled={false} buttonType="submit" text="Post to your page" />
 				</form>
 			</div>
 		)
